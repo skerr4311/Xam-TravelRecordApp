@@ -7,15 +7,19 @@
                  VerticalOptions="Center">
         <Entry x:Name="emailEntry"
                Placeholder="Email"
+               TextColor="{StaticResource blueColor}"
+               Text="Test"
                Keyboard="Email"/>
         <Entry x:Name="passwordEntry"
-               Placeholder="Password" 
+               Placeholder="Password"
+               TextColor="{StaticResource blueColor}"
+               Text="Test"
                IsPassword="True"/>
         <Button x:Name="LoginButton"
+                Margin="0,50,0,0"
                 Text="Login"
-                BackgroundColor="#3F84E5"
-                TextColor="White"
-                Clicked="LoginButton_Clicked"/>
+                Clicked="LoginButton_Clicked"
+                Style="{StaticResource normalButton}"/>
 
     </StackLayout>
 
