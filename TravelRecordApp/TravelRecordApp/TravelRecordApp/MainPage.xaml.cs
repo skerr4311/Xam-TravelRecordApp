@@ -22,11 +22,11 @@ namespace TravelRecordApp
 
             if(isEmailEmpty || isPasswordEmpty)
             {
-                //one or both entries are empty
+                //Do not navigate
             }
             else
             {
-                //Both are full
+                Navigation.PushAsync(new HomePage());
             }
         }
     }
